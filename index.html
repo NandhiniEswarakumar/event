@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Event Management</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* General Reset */
+        body, ul {
+            margin: 0;
+            padding: 10;
+            box-sizing: border-box;
+        }
+
+        /* Body Padding to Prevent Overlap with Fixed Header */
+        body {
+            background-image: url('marriage.jpg'); /* Replace with your image URL */
+            background-size: cover; /* Make the image cover the entire viewport */
+            background-position: center; /* Center the image */
+            background-attachment: fixed; /* Make the image fixed when scrolling */
+            padding-top: 110px; /* Padding to prevent content from being hidden under fixed header */
+            font-family: Arial, sans-serif; /* Optional: Add a font family for the page */
+            color: rgb(95, 178, 22); /* Make text white to contrast with the background */
+        }
+
+        /* Header Style */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px 0px; /* Reduce horizontal padding to fit items */
+            background: hwb(300 78% 17%);
+            backdrop-filter: transparent;
+            border-bottom: 1px solid gainsboro;
+            z-index: 1300;
+        }
+
+        /* Logo Style */
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            text-decoration: none;
+        }
+
+        /* Navbar Style */
+        .nav {
+            list-style-type: none;
+            display: flex;
+            margin: 0;
+        }
+
+        .nav li {
+            margin-left: 20px; /* Increase margin for better spacing */
+        }
+
+        .nav li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .nav li a:hover {
+            background-color: #333;
+            color: white;
+            border-radius: 4px;
+        }
+
+        /* Home Icon Style */
+        .nav-btn i {
+            font-size: 20px;
+        }
+        .overlay{
+            font-family: cursive;
+            font-size: 50px;
+            position: absolute;
+            bottom: 50px;
+            text-align: center;
+        
+            color: whitesmoke;
+
+        }
+        .table-container {
+            margin: 100px auto;
+            width: 80%;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Logo -->
+        <a href="/" class="logo">Blissful Ties</a>
+        <!-- Navbar -->
+        <ul class="nav">
+            <li>
+                <a class="nav-btn" href="#"><i class="fas fa-home"></i></a>
+            </li>
+            <li><a href="About">About</a></li>
+            <li>
+                <a href="Service">Services</a>
+                
+            </li>
+            <li><a href="Prices">Prices</a></li>
+            <li><a href="Contact">Contact</a></li>
+        </ul>
+    </header>
+    <div class="overlay" >
+        <p>Your Dream Wedding, Our Expertise. Let Us Manage Every Detail of Your Special Day!</p>
+    </div>
+    <div class="table-container">
+        <h2>Wedding Packages</h2>
+        <table>
+            <tr>
+                <th>Package</th>
+                <th>Price</th>
+                <th>Inclusions</th>
+            </tr>
+            <tr>
+                <td>Basic</td>
+                <td>$5,000</td>
+                <td>Venue, Catering, Decoration</td>
+            </tr>
+            <tr>
+                <td>Premium</td>
+                <td>$10,000</td>
+                <td>Basic + Photography, DJ, Flowers</td>
+            </tr>
+            <tr>
+                <td>Luxury</td>
+                <td>$20,000</td>
+                <td>Premium + Wedding Planner, Custom Decor, Live Band</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
